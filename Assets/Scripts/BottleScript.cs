@@ -12,7 +12,7 @@ public class BottleScript : MonoBehaviour
     public void Start()
     {
         // 5-SPATIAL-SOUND - Retrieve Audio Source on the bottle
-        //_audio = GetComponent<AudioSource>();
+        _audio = GetComponent<AudioSource>();
     }
 
     public void Awake()
@@ -41,18 +41,18 @@ public class BottleScript : MonoBehaviour
         GetComponent<Rigidbody>().AddForceAtPosition(rayHit.normal * -5, rayHit.point, ForceMode.Impulse);
 
         // 5-SPATIAL-SOUND - Play audio when we tap
-        //_audio.pitch = Random.Range(0.5f, 2.0f);
-        //_audio.Play();
+        _audio.pitch = Random.Range(0.5f, 2.0f);
+        _audio.Play();
     }
 
     void OnCollisionEnter(Collision collision)
     {
         // 5-SPATIAL-SOUND - Play audio when we have a collision
-        //if (collision.relativeVelocity.magnitude > 2)
-        //{
-        //    _audio.pitch = Random.Range(0.5f, 2.0f);
-        //    _audio.Play();
-        //}
+        if (collision.relativeVelocity.magnitude > 2)
+        {
+            _audio.pitch = Random.Range(0.5f, 2.0f);
+            _audio.Play();
+        }
     }
 
     public void Reset()
