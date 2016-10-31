@@ -91,9 +91,9 @@ namespace HoloToolkit.Unity
 
                 // 6-WORLD-COORDS - enable physics on the bottles now that we 
                 // are placed. Also, clear overriding the focused object
-                //var stack = GetComponentInChildren<StackedBottlesScript>();
-                //stack.InitPhysics();
-                //GestureManager.Instance.OverrideFocusedObject = null;
+                var stack = GetComponentInChildren<StackedBottlesScript>();
+                stack.InitPhysics();
+                GestureManager.Instance.OverrideFocusedObject = null;
             }
         }
 

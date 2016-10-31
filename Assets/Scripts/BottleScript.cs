@@ -19,9 +19,9 @@ public class BottleScript : MonoBehaviour
     {
         // 6-WORLD-COORDS - disable physics until we have placed the stage
         // (otherwise they will all just fall over!)
-        //_rb = GetComponent<Rigidbody>();
-        //_rb.isKinematic = true;
-        //_rb.detectCollisions = false;
+        _rb = GetComponent<Rigidbody>();
+        _rb.isKinematic = true;
+        _rb.detectCollisions = false;
 
         _position = gameObject.transform.localPosition;
         _rotation = gameObject.transform.localRotation;

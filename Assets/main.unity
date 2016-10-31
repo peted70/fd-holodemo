@@ -160,6 +160,28 @@ MonoBehaviour:
   m_Layer: 0
   m_Material: {fileID: 0}
   m_EnableCollisions: 1
+--- !u!114 &608216474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 608216472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -594688902, guid: f7b54ff4a43d4fcf81b4538b678e0bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SurfaceParent: {fileID: 0}
+  m_FreezeUpdates: 0
+  m_VolumeType: 1
+  m_SphereRadius: 2
+  m_HalfBoxExtents: {x: 4, y: 4, z: 4}
+  m_LodType: 1
+  m_NumUpdatesBeforeRemoval: 10
+  m_SecondsBetweenUpdates: 2.5
+  m_CurrentRenderState: 1
+  m_VisualMaterial: {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
+  m_OcclusionMaterial: {fileID: 15302, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &637800385
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,6 +334,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ed580454c4181145bcd84f2c1067e97, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1075038617 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1096918936577998, guid: 8ed580454c4181145bcd84f2c1067e97,
+    type: 2}
+  m_PrefabInternal: {fileID: 1071474248}
+--- !u!114 &1075038618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075038617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 156ab0c4b4e58c149a1aaf5fa7e4c167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1142436050
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +361,7 @@ GameObject:
   - component: {fileID: 1142436051}
   - component: {fileID: 1142436053}
   - component: {fileID: 1142436054}
+  - component: {fileID: 1142436055}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -406,6 +445,17 @@ MonoBehaviour:
           m_CallState: 1
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
+--- !u!114 &1142436055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142436050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f122ca4ae6b527e4798205becf9a0550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1230434843
 Prefab:
   m_ObjectHideFlags: 0
