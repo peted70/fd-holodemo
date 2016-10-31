@@ -58,8 +58,8 @@ public class BottleScript : MonoBehaviour
     public void Reset()
     {
         // 3-VOICE - reset to initial positions
-        //GetComponent<Rigidbody>().Sleep();
-        //gameObject.transform.localPosition = _position;
-        //gameObject.transform.localRotation = _rotation;
+        GetComponent<Rigidbody>().Sleep();
+        gameObject.transform.localPosition = _position;
+        gameObject.transform.localRotation = _rotation;
     }
 }

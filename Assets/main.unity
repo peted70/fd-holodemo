@@ -248,6 +248,7 @@ GameObject:
   - component: {fileID: 1142436052}
   - component: {fileID: 1142436051}
   - component: {fileID: 1142436053}
+  - component: {fileID: 1142436054}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -300,6 +301,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyboardSelectKey: 32
   MouseSelectButton: 1
+--- !u!114 &1142436054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142436050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2795b3e072e1745a4f8c670d64284f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecognizerStart: 0
+  KeywordsAndResponses:
+  - Keyword: Reset Stack
+    KeyCode: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1463509762}
+          m_MethodName: ResetBottles
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
 --- !u!1001 &1230434843
 Prefab:
   m_ObjectHideFlags: 0
@@ -342,6 +374,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b84b73491ac53a34095000876132a211, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1463509762 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114025522292015428, guid: 8ed580454c4181145bcd84f2c1067e97,
+    type: 2}
+  m_PrefabInternal: {fileID: 1071474248}
+  m_Script: {fileID: 11500000, guid: 73e70462750adcf488cad76c8e66bc5d, type: 3}
 --- !u!1 &1867924010 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 190680, guid: b84b73491ac53a34095000876132a211, type: 2}
