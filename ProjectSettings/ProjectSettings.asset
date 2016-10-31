@@ -383,7 +383,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: FDHoloDemo
   metroPackageVersion: 
-  metroCertificatePath: C:\Users\peted\Documents\GitHub\fd-holodemo\FDHoloDemo\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
