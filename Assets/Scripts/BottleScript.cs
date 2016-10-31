@@ -37,8 +37,8 @@ public class BottleScript : MonoBehaviour
     {
         // 2-GESTURE When the bottle is selected apply a force in opposit direction to 
         // the normal at the hit location
-        //var rayHit = GazeManager.Instance.HitInfo;
-        //GetComponent<Rigidbody>().AddForceAtPosition(rayHit.normal * -5, rayHit.point, ForceMode.Impulse);
+        var rayHit = GazeManager.Instance.HitInfo;
+        GetComponent<Rigidbody>().AddForceAtPosition(rayHit.normal * -5, rayHit.point, ForceMode.Impulse);
 
         // 5-SPATIAL-SOUND - Play audio when we tap
         //_audio.pitch = Random.Range(0.5f, 2.0f);
