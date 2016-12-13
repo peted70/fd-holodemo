@@ -168,6 +168,7 @@ PlayerSettings:
   tvOSSmallIconLayers: []
   tvOSLargeIconLayers: []
   tvOSTopShelfImageLayers: []
+  tvOSTopShelfImageWideLayers: []
   iOSLaunchScreenType: 0
   iOSLaunchScreenPortrait: {fileID: 0}
   iOSLaunchScreenLandscape: {fileID: 0}
@@ -383,11 +384,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: FDHoloDemo
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: C:\Users\pdaukin\Documents\Github\fd-holodemo\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 00d18e8bb66fd301
   metroApplicationDescription: FDHoloDemo
   wsaImages: {}
   metroTileShortName: 
